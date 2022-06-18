@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+     Moteros app mapa direccion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="display: flex;padding:16px">
+    <ion-input #latRef placeholder="Enter the lat" value="" style="margin-right: 8px;"></ion-input>
+    <ion-input #lngRef placeholder="Enter the lng" value=""></ion-input>
+  </div>
+  <div style="display: flex;align-items: center;justify-content: center;">
+    <!-- <ion-button class="ion-margin-top" color="danger" (click)="setDirection(3.425906200092204, -76.50541099898318)">Mostrar Direccion</ion-button> -->
+    <ion-button class="ion-margin-top" color="danger" (click)="setDirection(latRef.value, lngRef.value)">Mostrar Direccion</ion-button>
+  </div>
+</ion-content>
